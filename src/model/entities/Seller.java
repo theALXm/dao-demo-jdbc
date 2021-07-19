@@ -10,21 +10,21 @@ public class Seller implements Serializable
 	private Integer id;
 	private String name;
 	private String email;
-	private Date bithDate;
-	private Double basaSalary;
+	private Date birthDate;
+	private Double baseSalary;
 	private Department department;
 	
 	public Seller()
 	{		
 	}
 
-	public Seller(Integer id, String name, String email, Date bithDate, Double basaSalary, Department department) 
+	public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) 
 	{
 		this.id = id;
 		this.name = name;
 		this.email = email;
-		this.bithDate = bithDate;
-		this.basaSalary = basaSalary;
+		this.birthDate = birthDate;
+		this.baseSalary = baseSalary;
 		this.department = department;
 	}
 
@@ -40,13 +40,13 @@ public class Seller implements Serializable
 	{
 		return email;
 	}
-	public Date getBithDate() 
+	public Date getBirthDate() 
 	{
-		return bithDate;
+		return birthDate;
 	}
-	public Double getBasaSalary()
+	public Double getBaseSalary()
 	{
-		return basaSalary;
+		return baseSalary;
 	}
 	public Department getDepartment() 
 	{
@@ -66,13 +66,13 @@ public class Seller implements Serializable
 	{
 		this.email = email;
 	}
-	public void setBithDate(Date bithDate) 
+	public void setBirthDate(Date birthDate) 
 	{
-		this.bithDate = bithDate;
+		this.birthDate = birthDate;
 	}
-	public void setBasaSalary(Double basaSalary) 
+	public void setBaseSalary(Double baseSalary) 
 	{
-		this.basaSalary = basaSalary;
+		this.baseSalary = baseSalary;
 	}
 	public void setDepartment(Department department) 
 	{
@@ -114,11 +114,10 @@ public class Seller implements Serializable
 				+ id + ", name=" 
 				+ name 
 				+ ", email=" 
-				+ email 
-				+ ", bithDate=" 
-				+ bithDate 
-				+ ", basaSalary="
-				+ basaSalary 
+				+ ", birthDate=" 
+				+ birthDate 
+				+ ", baseSalary="
+				+ baseSalary 
 				+ ", department=" 
 				+ department 
 				+ "]";
